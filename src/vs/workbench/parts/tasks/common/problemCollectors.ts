@@ -436,6 +436,8 @@ export class WatchingProblemCollector extends AbstractProblemCollector implement
 				} else {
 					this.recordResourcesToClean(owner);
 				}
+
+				this.cleanMarkers(owner);
 			}
 		}
 		return result;
